@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
+
+body {
+  margin: 0;
+  min-width: 450px;
+  font-family: 'Spartan', serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    background: rgb(217,140,113);
+    background: radial-gradient(circle, rgba(217,140,113,1) 31%, rgba(140,48,48,1) 93%);
+}
+
+header div {
+    position: relative;
+    top: 18em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
+
+header img {
+    border-radius: 200px;
+    height: 250px;
+    width: 250px;
+    text-shadow: 0 0 60px 30px #FFFFFF;
+}
+
+nav ul {
+    display: flex;
+    position: absolute;
+    right: 16px;
+    top: -0.5em;
+}
+
+nav ul li,
+nav ul li a {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    padding: 1vw;
+    font-size: 16px;
+}
+
+a:hover {
+  color: black;
+}
+
+section h1, header h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  opacity: 0.4;
+  letter-spacing: 8px;
+  color: #8c3030;
+}
+
+.title{
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 10px;
+  font-size: 25px;
+  opacity: 0.2;
+  color: black;
+}
+
+.item .title {
+  display: block;
+  padding: 0.2em 0 2em 0;
+}
+
+
+section:first-of-type {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5vw 0;
+  margin-bottom: 7vw;
+  margin-top: 20em;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(209,207,214,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+section {
+ position: relative;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ padding: 2em 0;
+}
+
+section div {
+  position: relative;
+  width: 450px;
+  text-align: justify;
+}
+
+section div:nth-child(1) {
+  padding: 0 5em;
+}
+
+section div div:nth-child(1) {
+    padding: 0;
+}
+
+.textup {
+  margin-top: -6em;
+}
+
+.item h1 {
+  margin: -13px 0 0 0;
+  text-align: start;
+}
+
+.text {
+  margin-top: 62px;
+  padding: 20px 5em 0 5em;
+}
+.text div {
+  padding: 0;
+}
+
+.item div {
+  padding: 0 5em;
+}
+
+section div img {
+  width: 35px;
+  height: 35px;
+  opacity: 0.6;
+}
+
+section div div {
+  display: flex;
+}
+
+section div div p {
+  margin-top: 2px;
+  padding-left: 1.5em;
+}
+
+section a {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.photo1, .photo2 {
+  width: 450px;
+  height: auto;
+  opacity: 100;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: -9em;
+}
+
+.photo2 {
+  margin-bottom: -3em;
+}
+
+section p {
+  width: 450px;
+}
+
+.item p {
+  margin: 160px 0 0 0;
+}
+
+button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 3.5em;
+  margin-bottom: 5em;
+  padding: 20px 60px;
+  font-family: 'Julius Sans One', sans-serif;
+  opacity: 0.3;
+  letter-spacing: 10px;
+  font-weight: bold;
+  color: white;
+  background: black;
+  border-radius: 10px;
+  font-size: 12px;
+  width: 350px;
+}
+
+footer {
+  line-height: 1;
+  text-align: center;
+  padding: 3em 2em 2em 2em;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(209,207,214,1) 50%);
+}
+
+footer p , footer a{
+  font-size: 12px;
+}
+
+footer h1 {
+  padding-left: 12px;
+  font-family: 'Julius Sans One', sans-serif;
+  letter-spacing: 10px;
+  font-size: 25px;
+  opacity: 0.5;
+}

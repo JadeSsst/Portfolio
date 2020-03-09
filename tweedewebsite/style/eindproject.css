@@ -1,0 +1,350 @@
+/*
+Naam: Jade Schreuder
+Vak: frontend development
+Datum: 18 januari 2019
+*/
+
+
+
+/* lettertypes importeren*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Candal|Gayathri&display=swap');
+
+/* zodat er geen witranden zijn op de pagina*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* de rondjes op de achtergrond*/
+body {
+    margin-top: 0;
+    background:
+        radial-gradient(30vw 30vw at 20% 15%, #e0baa4 20%, transparent 50%),
+        radial-gradient(40vw 40vw at 75% 35%, #e0baa4 20%, transparent 50%),
+        radial-gradient(30vw 30vw at 15% 55%, #e0baa4 20%, transparent 50%),
+        radial-gradient(40vw 40vw at 65% 75%, #e0baa4 20%, transparent 50%);
+}
+
+/* alle h1 zelfde lettertype en kleur meegeven */
+h1 {
+    font-family: "Homemade Apple", sans-serif;
+    color: black;
+}
+
+/* geeft alle h2's zelfde styling mee*/
+h2 {
+    font-family: 'Candal', sans-serif;
+    color: gray;
+    font-size: 20p;
+    margin: 0 0;
+}
+
+/* alle p's hetzelfde lettertype geven*/
+p {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* alle list items en linkjes zelfde styling meegeven*/
+li,
+a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    padding: 1vw;
+}
+
+/* wanneer je met de muis over linkje gaat*/
+a:hover {
+    color: #FF6600;
+}
+
+/* extra styling voor de p in de header*/
+header p {
+    text-align: left;
+    margin-top: -30px;
+}
+
+/* maakt oa header relative zodat andere elementen er overheen kunnen*/
+header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* zorgt ervoor dat header afbeelding goed schaalt en goede grootte is*/
+header img {
+    object-fit: cover;
+    object-position: 70% 30%;
+    height: 37em;
+}
+
+/* laat de tekst in header links over het plaatje heen gaan */
+header div {
+    position: absolute;
+    top: 15em;
+    left: 15.5vw;
+}
+
+/* zorgt ervoor dat ik de header anders kan maken bij contact.html*/
+#contactheader {
+    height: 18em;
+}
+
+/* laat de navigatie rechts bovenin over plaatje komen en naast elkaar staan*/
+nav ul {
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+/* geeft alle buttons zelfde styling mee, en info voor als er transition plaats vindt*/
+button {
+    width: 120px;
+    height: 30px;
+    margin: 20px 20px 0px 0px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 2px 0px 10px 3px rgba(0, 0, 0, 0.7);
+    background-color: #FF6600;
+    color: #FFFFFF;
+    font-size: 14px;
+    transition: all .5s ease;
+}
+
+/* groter worden + ander kleurtje wanneer er met de muis over button wordt gegaan */
+button:hover {
+    background-color: green;
+    transform: scale(1.3);
+}
+
+/* achtergrondkleur + positie van de iconen*/
+#iconen {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    margin: -4px 0 2em 0;
+}
+
+/* zet quotes naast iconen in het midden + styling */
+#iconen p {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 4vw;
+    display: block;
+    color: #5f5c56;
+    font-style: italic;
+}
+
+/* styling iconen*/
+#iconen img {
+    width: 60px;
+    padding: 1vw 1vw;
+}
+
+/* grootte iconen + positie */
+section img {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* alle section gebeiden zelfde positie/styling meegeven + responsive maken */
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* alle div's in section zelfde positionering geven */
+section div {
+    margin: 0vw 2vw 0vw 0vw;
+    width: 25em;
+}
+
+/* zorgt ervoor dat de tekst tegen beide kanten uitlijnt*/
+section p {
+    text-align: justify;
+}
+
+/* tweede div in section lager laten beginnen */
+section div:nth-child(2) {
+    margin-top: 5.5em;
+}
+
+/* tekst centreren + styling*/
+section:nth-child(3) h2 {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0;
+}
+
+/* p styling uit section */
+section:nth-child(3) p {
+    text-align: center;
+    padding-bottom: 2em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* img stylen uit section + transition info meegeven */
+section:nth-child(3) div img {
+    padding: 1em;
+    background-color: #3a3833;
+    box-shadow: 12px 10px 15px -5px rgba(0, 0, 0, 0.75);
+    transition: width 1s, height 1s, background-color 1s, transform 1s;
+}
+
+/* hover bij de plaatjes uit 'mijn werk' en ze schalen + andere kleur */
+section:nth-child(3) div img:hover {
+    background-color: #CA725D;
+    transform: scale(1.5, 1.5);
+}
+
+/* h1 bij contact lager laten beginnen */
+#contact h1 {
+    padding-top: 2vw;
+}
+
+/* button centreren + positionering + styling */
+#contact button {
+    text-align: center;
+    height: 50px;
+    display: block;
+    margin: 5em auto auto auto;
+}
+
+/* placeholder styling */
+input::placeholder {
+    color: black;
+    opacity: 1.0;
+    padding-left: 1em;
+    font-style: italic;
+}
+
+/* form styling */
+form {
+    margin-top: 7em;
+    background-color: orange;
+    padding: 2vw 2vw;
+    box-shadow: 12px 10px 15px -5px rgba(0, 0, 0, 0.75);
+    min-width: 464px;
+}
+
+/* fieldset styling */
+fieldset {
+    margin: 2em 0 4em 0;
+    padding: 1em 1em;
+    display: flex;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 12px 10px 15px -5px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+
+/* legend styling oa zodat het niet in de fieldset zit */
+legend {
+    font-weight: bolder;
+    font-size: 1.3em;
+    font-family: 'Candal', sans-serif;
+    margin-top: -2.5em;
+    margin-left: -0.8em;
+    position: absolute;
+}
+
+/*label styling + lettertype, zelfde als h2 */
+label {
+    padding-bottom: 1vw;
+    font-family: 'Gayathri', sans-serif;
+}
+
+/* input en textarea styling */
+input,
+textarea {
+    width: 380px;
+    padding: 0.8vw;
+    margin-bottom: 1vw;
+    border-radius: 20px;
+    font-family: 'Gayathri', sans-serif;
+    background-color: lightgrey;
+    color: black;
+    opacity: 0.3;
+}
+
+/* wanneer er geklikt is op input en textarea ander kleurtje geven */
+input:focus,
+textarea:focus {
+    background-color: orange;
+    border: 3px solid orange;
+    color: black;
+}
+
+/* geslacht gedeelte styling zodat ze naast elkaar komen */
+fieldset div {
+    display: flex;
+    padding-top: 1vw;
+    font-family: 'Gayathri', sans-serif;
+}
+
+/*input geslacht styling */
+fieldset div input {
+    width: 1vw;
+    margin-left: 4vw;
+}
+
+/* hetgene wat verschijnt met javascript door klikken is nog niet te zien*/
+div div {
+    display: none;
+}
+
+/* specificatie voor js wat er verschijnt */
+div div.verschijn {
+    margin: auto;
+    display: block;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+    background-color: lightgray;
+}
+
+/* meegeven hoe de transition in elkaar zit als er gehoverd word*/
+footer a {
+    transition: width 1s, height 1s, background-color 1s, transform 1s;
+    margin: 0 1em;
+}
+
+/* wanneer er met de muis over de linkjes in de footer wordt gegaan, worden de blokken groter en krijgen een andere kleur*/
+footer a:hover {
+    background-color: white;
+    transform: scale(1.5, 1.5);
+}
+
+/* grootte van de plaatjes in de footer */
+footer a img {
+    width: 2em;
+}
+
+/* media query voor het verdwijnen van bepaalde dingen uit iconen gedeelte*/
+@media only screen and (max-width: 1000px) {
+    #iconen {
+        background-color: transparent;
+    }
+    #iconen p {
+        display: none;
+    }
+
+    #iconen img {
+        padding: 1vw 8vw;
+    }
+}

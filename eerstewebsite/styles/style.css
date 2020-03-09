@@ -1,0 +1,265 @@
+/* 
+Naam: Jade Schreuder
+Klas: Fuchsia
+Vak: Internetstandaarden
+Datum: 13-01-2019
+*/
+
+/* css om de achtergrond vast te stellen */
+body {
+    background: url(https://i.pinimg.com/564x/44/b3/59/44b359de0172dc0596f94756e0a617e7.jpg);
+    font-family: "arial", serif;
+}
+
+/* nodig om de header te stylen*/
+header {
+    background: #a5c1ab;
+    opacity: 0.7;
+    font-family: desdemona;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    display: block;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+/* zorgt ervoor dat alle li's geen bullet hebben */
+li {
+    list-style-type: none;
+}
+
+/* zorgt ervoor dat alle linkjes geen streep er onder hebben */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* zorgt ervoor dat de navigatie in het midden staat + styling */
+.navigation {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: gainsboro;
+}
+
+/* zorgt ervoor dat de li elementen van de nav naast elkaar staan + styling */
+.nav {
+    display: inline;
+    padding: 80px;
+    font-size: 20px;
+    color: white;
+    font-family: silom;
+}
+
+/* zorgt ervoor dat de afbeelding van mezelf op de juiste manier wordt weergegeven */
+#ik {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+/* 'welkom op mijn profiel stylen */
+#welkom {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 10px;
+    font-family: candal;
+    font-size: 20px;
+}
+
+/* class voor de witte achtergrond op iedere pagina */
+.infobackground {
+    background-color: white;
+    display: block;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* welkomstekstje op de homepagina stylen */
+.info {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+}
+
+/* 'Met vriendelijke groet, Jade Schreuder' stylen */
+#groet {
+    text-align: center;
+    font-family: cursive;
+}
+
+/* footer stylen */
+footer {
+    background: #a5c1ab;
+    opacity: 0.7;
+    font-family: sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+/* de pictogrammen van insta facebook en pinterest stylen */
+.pictogram {
+    width: 40px;
+    height: 40px;
+    display: inline;
+}
+
+/* naam voor ul en zorgen dat tekst in de footer rechts staat */
+.socialmedia {
+    text-align: right;
+}
+
+/* de li's van de socialmedia ul naast elkaar krijgen */
+.social {
+    display: inline;
+    padding: 20px;
+}
+
+/* email en telefoonnummer in footer */
+.me {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: right;
+}
+
+/* de invul vakken bij het formulier stylen */
+input, textarea {
+    border-radius: 5px;
+    border: 1px solid #a5c1ab;
+    background-color: #eafeee;
+    padding: 5px 170px 5px 5px;
+}
+
+/* de invulvakken behalve textarea grootte aanpassen */
+input {
+    height: 20px;
+}
+
+/* zorgt ervoor dat het formulier in het midden staat */ 
+form {
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 10px 80px;
+}
+
+/* de fieldset stylen */
+fieldset {
+    width: 600px;
+    border: 3px solid #a5c1ab;
+    border-radius: 40px;
+}
+
+/* de legend in de fieldset stylen */
+legend {
+    border: 3px solid #a5c1ab;
+    border-radius: 10px;
+    padding: 5px 30px;
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: gray;
+}
+
+/* de submit button stylen */
+#verzend {
+    background-color: #a5c1ab;
+    margin: 30px 0px;
+    padding: 10px 50px 30px 50px;
+    font-family: monospace;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+/* de paginatitel stylen */
+.paginatitel {
+    text-align: center;
+    font-family: silom;
+    color: gray;
+}
+
+/* titel van de tabel stylen */
+th {
+    border-bottom: 1px solid grey;
+    padding: 40px 10px 10px 10px;
+    text-align: left;
+    font-family: monospace;
+    font-size: 20px;
+    color: #a5c1ab;
+    letter-spacing: 0.2em;
+}
+
+/* tabeldata stylen */
+td {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+/* de oneven rijen in de tabel een kleur geven */
+.oneven {
+    background-color: #e9f6ec;
+}
+
+/* zorgt ervoor dat de hele tabel geen wit lijntjes er tussen heeft en zorgt ervoor dat de tabel in het midden staat */
+table {
+    border-collapse: collapse;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+}
+
+/* styling van de afbeeldingen bij 'mijn werk' */
+.posters {
+    margin: 40px 0px 5px 0px;
+    width: 60%;
+    height: 60%;
+    border: 10px solid #a5c1ab;
+}
+
+/* zorgt ervoor dat er een groene achtergrond is bij mijn werk + styling */
+#eerste, #tweede {
+    margin: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e9f6ec;
+    width: 500px;
+}
+
+/* styling van de titel van hoe het geproduceerde werk heet */
+.titel {
+    font-family: candal;
+    font-size: 25px;
+    color: dimgrey;
+}
+
+/* zorgt ervoor dat de uitleg van mijn geproduceerde werk niet helemaal tegen de onderrand zit */
+.uitleg {
+    padding-bottom: 20px;
+}
+
+/* styling van het tekstje onder uitleg van geproduceerde werk */
+.afsluiting {
+    font-family: monospace;
+    font-size: 15px;
+    padding: 20px;
+}
+
+/* styling van onderschrift op elke pagina van de titel vd pagina */
+.onderschrift {
+    text-align: center;
+    font-family: monospace;
+    font-size: 18px;
+}

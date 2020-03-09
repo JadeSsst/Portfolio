@@ -1,0 +1,89 @@
+<!-- 
+Naam: Jade Schreuder
+Vak: frontend development
+Datum: 18 januari 2019
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio van Jade</title>
+    <link href="style/eindproject.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- de header -->
+    <header>
+        <img id="contactheader" src="images/clean-desk-styling.jpg" alt="sdf" style="width:100%;">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#werk">mijn werk</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- contact gedeelte-->
+        <section id="contact">
+            <div>
+                <h1>Contact</h1>
+                <p>U kunt contact met mij opnemen voor eveventuele vragen of boekingen. Ik zal zo snel mogelijk reageren op uw vraag omdat ik het belangrijk vind om goede communicatie te hebben met de klant.</p>
+                <button>Verder nog vragen?</button>
+                <div>
+                    <p>Vul het formulier maar in!</p>
+                    <h1>XXX Jade</h1>
+                </div>
+            </div>
+
+            <!-- formulier -->
+            <form action="contact.html" method="post">
+                <fieldset>
+                    <legend>Personalia</legend>
+                    <label for="voornaam">Voornaam</label>
+                    <input id="voornaam" placeholder="vb. Jan" required type="text">
+                    <label for="achternaam">Achternaam</label>
+                    <input id="achternaam" placeholder="vb. van het Hek" required type="text">
+                    <div>
+                        <label for="geslacht">Geslacht</label>
+                        <input id="geslacht" type="radio" name="jo"> Man
+                        <input id="geslacht" type="radio" name="jo"> Vrouw
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Contactgegevens</legend>
+                    <label for="telefoon">Telefoonnummer</label>
+                    <input id="telfoon" placeholder="vb. 06-12345678" type="tel" pattern="[0-9]{2}-[0-9]{3}[0-9]{3}[0-9]{2}">
+                    <label for="email">Email adres</label>
+                    <input id="emailaddress" placeholder="vb. janvanhethek@mail.nl" type="email">
+                </fieldset>
+                <fieldset>
+                    <legend>Bericht</legend>
+                    <label for="bericht">Schrijf hier uw bericht</label>
+                    <textarea id="bericht" placeholder="Type..." rows="4" cols="50"></textarea>
+                </fieldset>
+                <button>Verstuur</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <a href="#"><img src="images/insta.png" alt="instagram"></a>
+        <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+        <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+    </footer>
+
+    <!-- javascript aanroepen -->
+    <script src="js/eindproject.js"></script>
+
+</body>
+
+
+</html>
